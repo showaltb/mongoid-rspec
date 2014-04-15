@@ -27,12 +27,12 @@ module Mongoid
         "Expected #{expectation} (#{@problem})"
       end
 
-      def negative_failure_message
+      def failure_message_when_negated
         "Did not expect #{expectation}"
       end
 
       def description
-        description = "accepts_nested_attributes_for :#{@attribute}"
+        "accepts_nested_attributes_for :#{@attribute}"
       end
 
       protected
