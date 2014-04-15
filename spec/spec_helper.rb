@@ -30,3 +30,5 @@ RSpec.configure do |config|
     Mongoid::Config.purge!
   end
 end
+
+I18n.enforce_available_locales = true
